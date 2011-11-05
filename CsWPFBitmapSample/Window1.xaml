@@ -1,0 +1,25 @@
+﻿<Window x:Class="CsWPFBitmapSample.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF Bitmap Sample" Height="370" Width="320" Loaded="Window_Loaded" Closed="Window_Closed">
+  <Grid>
+    <StackPanel Orientation="Horizontal" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+      <Button x:Name="bRecord" Width="50" Click="bRecord_Click">Record</Button>
+      <Button x:Name="bPlay" Width="50" Click="bPlay_Click">Play</Button>
+      <Button x:Name="bPause" Width="50" Click="bPause_Click">Pause</Button>
+      <Button x:Name="bCalibrate" Width="50" Click="bCalibrate_Click">Cal</Button>
+      <Label x:Name="lRecording" VerticalAlignment="Center" Visibility="Collapsed">Recording</Label>
+      <Label x:Name="lPlaying" VerticalAlignment="Center" Visibility="Collapsed">Playing</Label>
+    </StackPanel>
+    <Image Name="SensorImage" Stretch="Fill" Margin="0,30,0,0"/>
+    <Label x:Name="lZone1" Width="100" Height="100" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone2" Width="100" Height="100" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone3" Width="100" Height="100" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone4" Width="100" Height="100" Margin="0,130,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone5" Width="100" Height="100" Margin="0,130,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone6" Width="100" Height="100" Margin="0,130,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone7" Width="100" Height="100" Margin="0,230,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone8" Width="100" Height="100" Margin="0,230,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="White"></Label>
+    <Label x:Name="lZone9" Width="100" Height="100" Margin="0,230,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="20" Foreground="White"></Label>
+  </Grid>
+</Window>

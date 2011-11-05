@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="LokiApp.GestureControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:loki="clr-namespace:LokiApp"
+             mc:Ignorable="d">
+  <UserControl.Resources>
+    <ResourceDictionary>
+      <loki:GestureVisibilityConverter x:Key="gvConverter"/>
+    </ResourceDictionary>
+  </UserControl.Resources>
+  <Grid>
+    <Image Source="/LokiApp;component/Resources/Tap.png" Width="50" Visibility="{Binding Converter={StaticResource ResourceKey=gvConverter}, ConverterParameter=Tap}"/>
+    <Image Source="/LokiApp;component/Resources/Tap2x.png" Width="50" Visibility="{Binding Converter={StaticResource ResourceKey=gvConverter}, ConverterParameter=DoubleTap}"/>
+    <Image Source="/LokiApp;component/Resources/Touch.png" Width="50" Visibility="{Binding Converter={StaticResource ResourceKey=gvConverter}, ConverterParameter=ZonePressed}"/>
+  </Grid>
+</UserControl>
